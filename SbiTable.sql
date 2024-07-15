@@ -1,4 +1,13 @@
-use practical;
+USE practical;
 select *from aadhar;
 select * from pan;
 select * from sbi;
+SHOW TABLES;
+create table our_college (Department varchar(20),Courses varchar(20),Batches varchar(10));
+desc our_college;
+insert into our_college values ('Management','BBA','1stYear');
+insert into our_college values ('Management','BBA','2ndYear');
+insert into our_college values ('Management','BBA','3rdYear');
+insert into our_college values ('Management','MBA','1stYear');
+insert into our_college values ('Management','MBA','2ndyear');
+select * from our_college;
