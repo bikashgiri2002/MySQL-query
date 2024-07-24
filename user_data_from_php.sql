@@ -1,0 +1,10 @@
+create database registration;
+use  registration;
+create table user_data (name varchar(255),gmail varchar(255), mobile varchar(10),roll_no int,password varchar(255));
+desc user_data;
+select * from user_data;
+SET SQL_SAFE_UPDATES = 0;
+DELETE FROM user_data WHERE name ='Bikash Kumar Giri';
+ALTER table user_data modify column password varchar(255);
+desc user_data;
+ALTER TABLE user_data DROP PRIMARY KEY;
